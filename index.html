@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Join The Impostor Protocol — an Among Us-inspired campus gaming event." />
+  <title>The Impostor Protocol | A Campus Gaming Event</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{--bg:#080b16;--panel:#101526;--panel2:#141a2c;--text:#f5f5f7;--muted:#a3abc0;--red:#ff5d68;--green:#a8f0b0;--line:rgba(255,255,255,.12);--font:'Inter',sans-serif;--display:'Space Grotesk',sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);overflow-x:hidden}a{color:inherit;text-decoration:none}button,input,select{font:inherit}.wrap{width:min(1160px,calc(100% - 48px));margin-inline:auto}.stars{position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.23;background-image:radial-gradient(#fff 1px,transparent 1px),radial-gradient(#8ca0ff 1px,transparent 1px);background-size:83px 83px,137px 137px;background-position:0 0,33px 52px}.nav{height:86px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:relative;z-index:5}.brand{display:flex;align-items:center;gap:9px;font-size:13px;letter-spacing:1.6px;font-weight:800}.brand-mark{display:grid;place-items:center;width:28px;height:28px;background:var(--red);color:#17121a;border-radius:9px;font-size:17px}.brand-divider{color:#5c637a}.brand-light{font-weight:500;color:#aab0c3;font-size:11px}nav{display:flex;align-items:center;gap:32px;font-size:12px;color:#c1c6d5}nav a:hover,.text-link:hover{color:var(--green)}.nav-cta{border:1px solid #596078;border-radius:8px;padding:12px 16px;color:white}.nav-cta span{color:var(--green);margin-left:12px}.menu-toggle{display:none;background:transparent;color:white;border:1px solid var(--line);border-radius:8px;padding:8px 11px}.hero{min-height:650px;display:grid;grid-template-columns:1.03fr .97fr;align-items:center;position:relative;padding-top:45px;padding-bottom:85px}.hero-copy{position:relative;z-index:2}.eyebrow{font-size:10px;font-weight:800;letter-spacing:2px;color:#a9b0c4;display:flex;align-items:center;gap:10px}.live-dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 12px var(--green)}.eyebrow-line{height:1px;width:35px;background:#48506a}h1,h2,h3,p{margin-top:0}h1,h2{font-family:var(--display);font-weight:700;letter-spacing:-2.5px;line-height:.99}h1{font-size:clamp(44px,6.4vw,79px);margin:28px 0 23px}h2{font-size:clamp(39px,5vw,59px);margin:18px 0}.accent{color:var(--red)}.outline{color:transparent;-webkit-text-stroke:1.5px #e8eaf2}.hero-text{font-size:14px;line-height:1.85;color:var(--muted);max-width:470px}.hero-actions{display:flex;align-items:center;gap:27px;margin-top:30px}.button{display:inline-flex;justify-content:center;align-items:center;gap:25px;padding:15px 19px;border:0;border-radius:7px;font-size:12px;font-weight:800;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s}.button:hover{transform:translateY(-3px);box-shadow:0 10px 32px #ff5d6838}.button-primary{background:var(--red);color:#190d18}.button span{font-size:17px}.text-link{font-size:12px;color:#d0d4e0}.text-link span{color:var(--green);padding-left:8px}.hero-meta{display:flex;gap:26px;margin-top:42px;padding-top:23px;border-top:1px solid var(--line);max-width:500px}.hero-meta>div{display:flex;align-items:center;gap:11px}.meta-icon{font-size:21px;color:var(--red)}.meta-icon.green{color:var(--green)}.hero-meta b,.hero-meta small{display:block}.hero-meta b{font-size:9px;letter-spacing:1px}.hero-meta small{font-size:10px;color:var(--muted);margin-top:6px}.hero-art{height:470px;position:relative;isolation:isolate}.orbit{position:absolute;border:1px solid rgba(160,173,255,.18);border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-22deg)}.orbit-one{width:430px;height:310px}.orbit-two{width:350px;height:460px;transform:translate(-50%,-50%) rotate(40deg)}.planet{position:absolute;width:300px;height:300px;border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%);background:radial-gradient(circle at 35% 28%,#252e4d,#12182b 55%,#0c1020);box-shadow:inset -28px -18px 45px #050710,0 0 100px #4e5caa17}.crewmate{position:absolute;width:105px;height:145px;border-radius:48% 48% 25% 25%;z-index:2;filter:drop-shadow(0 18px 10px #0005);animation:float 4s ease-in-out infinite}.crewmate:before{content:"";position:absolute;bottom:-10px;left:15px;width:28px;height:28px;border-radius:5px 5px 12px 12px;background:inherit;filter:brightness(.82)}.crewmate:after{content:"";position:absolute;bottom:-10px;right:15px;width:28px;height:28px;border-radius:5px 5px 12px 12px;background:inherit;filter:brightness(.82)}.visor{position:absolute;z-index:4;width:73px;height:43px;right:-17px;top:28px;border-radius:23px 25px 20px 20px;background:linear-gradient(145deg,#c4f3ff,#67a4c7 60%,#3c668d);border:5px solid #7c879d;box-shadow:inset 0 4px 5px #fff8}.backpack{position:absolute;width:29px;height:70px;left:-21px;top:43px;border-radius:12px;background:inherit;filter:brightness(.78)}.mate-red{background:#ff5665;left:35%;top:27%;transform:rotate(-12deg);z-index:3}.mate-cyan{background:#67d7e9;left:57%;top:40%;transform:scale(.83) rotate(12deg);animation-delay:-1.1s}.mate-yellow{background:#ffd166;left:18%;top:49%;transform:scale(.65) rotate(-14deg);animation-delay:-2s}.mate-purple{background:#b9a2ff;left:67%;top:19%;transform:scale(.57) rotate(17deg);animation-delay:-.6s}.floating-label{position:absolute;z-index:4;background:#101629eF;border:1px solid #515a78;border-radius:7px;padding:12px 14px;font-size:8px;letter-spacing:1.1px;color:#b9c1d7;box-shadow:0 10px 30px #0003}.floating-label b{color:var(--green);display:block;margin-top:6px;font-size:10px}.label-top{top:47px;right:0}.label-bottom{bottom:38px;left:5px}.signal-bars{color:var(--green);font-size:16px;margin-right:7px}.sparkle{position:absolute;color:var(--green);font-size:24px}.s1{top:20%;left:25%}.s2{top:69%;right:12%;color:#ff7e8b}.s3{bottom:18%;left:36%;font-size:15px}.s4{top:33%;right:12%;font-size:36px}.scroll-note{position:absolute;bottom:27px;left:0;font-size:8px;letter-spacing:2px;color:#8189a0;display:flex;align-items:center;gap:12px}.scroll-note span{height:31px;width:1px;background:var(--red)}.ticker{overflow:hidden;background:var(--green);color:#111727;transform:rotate(-1.4deg) scale(1.02);padding:17px 0;margin:0 0 90px}.ticker-track{display:flex;align-items:center;justify-content:space-around;gap:35px;white-space:nowrap;font-family:var(--display);font-size:12px;font-weight:700;letter-spacing:1.6px}.ticker i{font-style:normal;font-size:18px}.section{padding-top:10px;padding-bottom:100px}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:43px}.section-heading h2{margin-bottom:0}.section-heading>p{max-width:380px;color:var(--muted);font-size:13px;line-height:1.8;margin-bottom:5px}.mission-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:14px}.mission-card{min-height:285px;background:linear-gradient(145deg,#141b30,#0e1323);border:1px solid var(--line);border-radius:12px;padding:25px;position:relative;overflow:hidden;transition:transform .25s,border-color .25s}.mission-card:hover{transform:translateY(-5px);border-color:#6e7797}.big-card{background:linear-gradient(145deg,#24203a,#12182a)}.card-number{font-size:10px;color:#7d88a7;letter-spacing:1px}.card-emoji{font-size:34px;margin:25px 0 20px}.mission-card h3{font-family:var(--display);font-size:20px;margin-bottom:10px}.mission-card p{font-size:12px;line-height:1.75;color:var(--muted);max-width:280px}.card-foot{position:absolute;bottom:22px;left:25px;right:25px;padding-top:13px;border-top:1px solid var(--line);font-size:8px;letter-spacing:1.5px;color:#939bb2}.card-foot b{float:right;color:var(--green);font-size:15px}.activities-section{background:#0d1120;border-top:1px solid #ffffff0c;border-bottom:1px solid #ffffff0c;padding:95px 0}.activities-inner .section-heading{margin-bottom:30px}.activity-list{border-top:1px solid var(--line)}.activity-row{display:grid;grid-template-columns:45px 55px 1fr 30px;gap:15px;align-items:center;padding:23px 0;border-bottom:1px solid var(--line)}.activity-index{font-size:11px;color:var(--red);font-weight:800}.activity-icon{width:43px;height:43px;display:grid;place-items:center;background:#1b2236;border-radius:10px;font-size:21px}.activity-row h3{font-size:15px;margin:0 0 6px}.activity-row p{font-size:11px;color:var(--muted);margin:0}.activity-arrow{font-size:20px;color:var(--green);text-align:right}.event-section{padding-top:90px;padding-bottom:100px}.event-panel{display:grid;grid-template-columns:1fr .85fr;background:linear-gradient(120deg,#171d32,#111628);border:1px solid var(--line);border-radius:14px;overflow:hidden}.event-left{padding:45px}.event-left h2{font-size:clamp(35px,4vw,49px);margin:23px 0}.event-left p{font-size:12px;line-height:1.8;color:var(--muted);max-width:380px;margin-bottom:25px}.event-facts{padding:25px 35px;background:#ffffff04;display:grid;grid-template-columns:1fr 1fr;gap:10px}.fact{padding:18px 12px;border-bottom:1px solid var(--line)}.fact span,.fact b,.fact small{display:block}.fact span{font-size:8px;letter-spacing:1.5px;color:#929bb4;margin-bottom:13px}.fact b{font-size:12px;line-height:1.5}.fact small{font-size:10px;color:var(--muted);margin-top:7px;line-height:1.5}.register-section{background:#0d1120;padding:95px 0;border-top:1px solid var(--line)}.register-grid{display:grid;grid-template-columns:1fr .85fr;gap:90px;align-items:start}.register-copy h2{font-size:clamp(42px,5vw,60px);margin:24px 0}.register-copy>p{color:var(--muted);font-size:13px;line-height:1.8;max-width:400px}.privacy-note{margin-top:35px;padding-top:20px;border-top:1px solid var(--line);font-size:11px;color:#aab2c7}.privacy-note span{color:var(--green);margin-right:8px}.registration-form{background:#141a2c;border:1px solid var(--line);border-radius:12px;padding:27px;display:flex;flex-direction:column}.registration-form label{font-size:11px;font-weight:700;margin:0 0 9px}.registration-form input:not([type=checkbox]),.registration-form select{width:100%;padding:13px 12px;margin-bottom:19px;background:#0b1020;border:1px solid #303952;border-radius:7px;color:#f3f4fa;outline:none;font-size:12px}.registration-form input:focus,.registration-form select:focus{border-color:var(--green);box-shadow:0 0 0 3px #a8f0b012}.registration-form input::placeholder{color:#66708a}.registration-form select{color:#aeb7cc}.check-label{display:flex;align-items:flex-start;gap:10px!important;color:#b9c0d2;font-weight:400!important;line-height:1.6;margin:0 0 20px!important}.check-label input{accent-color:var(--red);margin-top:3px}.submit-button{width:100%}.form-message{font-size:12px;line-height:1.5;margin:13px 0 0;color:var(--green)}.form-small{font-size:9px;color:#818aa2;text-align:center;margin:12px 0 0}.footer{border-top:1px solid var(--line);padding:25px 0 18px}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}.footer-inner>span,.footer-inner>a:last-child{font-size:9px;letter-spacing:1px;color:#9aa3b8}.footer-inner>a:last-child{color:var(--green)}.footer-bottom{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);margin-top:22px;padding-top:16px;color:#727c95;font-size:9px;line-height:1.6}.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:translateY(0)}@keyframes float{0%,100%{margin-top:0}50%{margin-top:-13px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}@media(max-width:800px){.wrap{width:min(100% - 34px,600px)}.nav{height:72px}.menu-toggle{display:block}nav{display:none;position:absolute;top:71px;left:0;right:0;padding:18px;background:#101526;border:1px solid var(--line);border-radius:10px;flex-direction:column;align-items:stretch;gap:0}nav.open{display:flex}nav a{padding:13px}.nav-cta{margin-top:8px}.hero{grid-template-columns:1fr;padding-top:60px;padding-bottom:65px;min-height:0}.hero-copy{max-width:600px}.hero-art{height:390px;grid-row:1;grid-column:1;margin-bottom:20px;transform:scale(.9)}.hero-copy{grid-row:2}.scroll-note{display:none}.hero-meta{gap:17px}.hero-meta b{font-size:8px}.hero-meta small{font-size:9px}.ticker{margin-bottom:65px}.ticker-track{justify-content:flex-start;gap:22px}.section{padding-bottom:70px}.section-heading{display:block}.section-heading>p{margin-top:22px}.mission-grid{grid-template-columns:1fr}.mission-card{min-height:250px}.activities-section{padding:70px 0}.event-panel,.register-grid{grid-template-columns:1fr}.event-left{padding:30px}.event-facts{padding:20px}.register-grid{gap:40px}.register-section{padding:70px 0}.footer-inner{flex-wrap:wrap}.footer-inner>span{order:3;width:100%}.footer-bottom{flex-direction:column;gap:8px}}@media(max-width:430px){h1{font-size:47px;letter-spacing:-1.8px}.hero-art{height:310px;transform:scale(.77);transform-origin:center center;margin:0 -35px 0}.hero-meta{flex-direction:column}.hero-actions{align-items:flex-start;flex-direction:column;gap:18px}.event-facts{grid-template-columns:1fr 1fr;padding:12px}.fact{padding:14px 8px}.activity-row{grid-template-columns:20px 42px 1fr 18px;gap:10px}.activity-row p{line-height:1.6}.registration-form{padding:20px}.footer-bottom{font-size:8px}}
+
+
+/* Keyboard accessibility: skip navigation and visible focus indicators. */
+.skip-link{position:absolute;left:12px;top:-60px;z-index:1000;background:var(--green);color:#111727;padding:12px 16px;border-radius:6px;font-weight:800}
+.skip-link:focus{top:12px}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#home">Skip to content</a>
+  <div class="stars" aria-hidden="true"></div>
+  <header class="nav wrap">
+    <a class="brand" href="#home" aria-label="Impostor Protocol home"><span class="brand-mark">✦</span> SPARK <span class="brand-divider">/</span> <span class="brand-light">CREW EVENT</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="navLinks" aria-label="Main navigation">
+      <a href="#mission">Mission</a><a href="#activities">What's inside</a><a href="#details">Event details</a><a class="nav-cta" href="#register">Join the crew <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero wrap">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="live-dot"></span> TRANSMISSION RECEIVED <span class="eyebrow-line"></span> #SPARK-001</div>
+        <h1>ONE SHIP.<br>ONE <span class="accent">IMPOSTOR.</span><br><span class="outline">ZERO TRUST.</span></h1>
+        <p class="hero-text">The crew is counting on you. Team up, solve the chaos, and find the impostor in a campus event built for curious minds and competitive spirits.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#register">Reserve your seat <span>↗</span></a><a class="text-link" href="#mission">Explore the mission <span>↓</span></a></div>
+        <div class="hero-meta"><div><span class="meta-icon">◷</span><span><b>ONE EPIC SESSION</b><small>Games · Teamwork · Mystery</small></span></div><div><span class="meta-icon green">✳</span><span><b>OPEN TO STUDENTS</b><small>Bring your crew or meet one</small></span></div></div>
+      </div>
+      <div class="hero-art reveal" aria-label="Illustration of colourful space crewmates" role="img">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="planet"></div>
+        <div class="floating-label label-top">TASK STATUS <b>INCOMPLETE</b></div>
+        <div class="crewmate mate-red"><div class="visor"></div><div class="backpack"></div></div>
+        <div class="crewmate mate-cyan"><div class="visor"></div><div class="backpack"></div></div>
+        <div class="crewmate mate-yellow"><div class="visor"></div><div class="backpack"></div></div>
+        <div class="crewmate mate-purple"><div class="visor"></div><div class="backpack"></div></div>
+        <div class="floating-label label-bottom"><span class="signal-bars">▂ ▅ ▇</span> CREW SIGNAL: <b>STRONG</b></div>
+        <span class="sparkle s1">✦</span><span class="sparkle s2">✧</span><span class="sparkle s3">✦</span><span class="sparkle s4">·</span>
+      </div>
+      <div class="scroll-note"><span></span> SCROLL TO BRIEFING</div>
+    </section>
+
+    <section class="ticker" aria-label="Event highlights"><div class="ticker-track"><span>TRUST NO ONE</span><i>✦</i><span>COMPLETE YOUR TASKS</span><i>✦</i><span>FIND THE IMPOSTOR</span><i>✦</i><span>TRUST NO ONE</span><i>✦</i><span>COMPLETE YOUR TASKS</span><i>✦</i><span>FIND THE IMPOSTOR</span><i>✦</i></div></section>
+
+    <section class="section wrap" id="mission">
+      <div class="section-heading reveal"><div><div class="eyebrow">01 / MISSION BRIEFING</div><h2>YOUR NEXT<br><span class="accent">ADVENTURE.</span></h2></div><p>This isn't just another game night. It's a chance to think fast, work together, and figure out who is sabotaging the mission.</p></div>
+      <div class="mission-grid"><article class="mission-card big-card reveal"><span class="card-number">01</span><div class="card-emoji">🛸</div><h3>Enter the spaceship</h3><p>Meet your crew, get your mission briefing, and prepare for the unexpected.</p><span class="card-foot">THE JOURNEY BEGINS <b>↗</b></span></article><article class="mission-card reveal"><span class="card-number">02</span><div class="card-emoji">🧩</div><h3>Complete your tasks</h3><p>Use teamwork and quick thinking to keep the ship running.</p><span class="card-foot">STAY SHARP <b>↗</b></span></article><article class="mission-card reveal"><span class="card-number">03</span><div class="card-emoji">🔎</div><h3>Find the impostor</h3><p>Observe, discuss, and vote. One wrong call can change everything.</p><span class="card-foot">WHO CAN YOU TRUST? <b>↗</b></span></article></div>
+    </section>
+
+    <section class="activities-section" id="activities"><div class="wrap activities-inner"><div class="section-heading reveal"><div><div class="eyebrow">02 / INSIDE THE MISSION</div><h2>MORE THAN<br><span class="accent">A GAME.</span></h2></div><p>Whether you're a seasoned detective or a first-time crewmate, there's a place for you on this ship.</p></div><div class="activity-list"><div class="activity-row reveal"><span class="activity-index">A</span><div class="activity-icon">🎮</div><div><h3>Social deduction rounds</h3><p>Read the room, spot suspicious moves, and make your case.</p></div><span class="activity-arrow">↗</span></div><div class="activity-row reveal"><span class="activity-index">B</span><div class="activity-icon">🤝</div><div><h3>Team strategy</h3><p>Coordinate with your crew, share information, and stay alert.</p></div><span class="activity-arrow">↗</span></div><div class="activity-row reveal"><span class="activity-index">C</span><div class="activity-icon">🏆</div><div><h3>Final crew challenge</h3><p>Bring your best instincts to the last round and earn bragging rights.</p></div><span class="activity-arrow">↗</span></div></div></div></section>
+
+    <section class="section wrap event-section" id="details"><div class="event-panel reveal"><div class="event-left"><div class="eyebrow">03 / YOUR MISSION LOG</div><h2>READY TO<br>BOARD, <span class="accent">CREWMATE?</span></h2><p>Save the details and get ready to launch. Event information below is a sample—replace it with your club's confirmed details before publishing.</p><a class="button button-primary" href="#register">I'm in <span>↗</span></a></div><div class="event-facts"><div class="fact"><span>DATE</span><b>To be announced</b><small>Update with official date</small></div><div class="fact"><span>LOCATION</span><b>Campus / Online</b><small>Confirm with organisers</small></div><div class="fact"><span>WHO CAN JOIN?</span><b>All students</b><small>Beginners welcome</small></div><div class="fact"><span>ENTRY</span><b>Free · Registration required</b><small>Change if your event differs</small></div></div></div></section>
+
+    <section class="register-section" id="register"><div class="wrap register-grid"><div class="register-copy reveal"><div class="eyebrow">04 / JOIN THE CREW</div><h2>YOUR SEAT<br>IS <span class="accent">WAITING.</span></h2><p>Drop your details into the transmission form. This demo validates your inputs in the browser; it does not send or store registrations online.</p><div class="privacy-note"><span>◈</span> No passwords. No secrets. Just your crew details.</div></div><form id="registrationForm" class="registration-form reveal"><label for="name">Your name</label><input id="name" name="name" type="text" placeholder="e.g. Alex Morgan" minlength="2" required><label for="email">College email</label><input id="email" name="email" type="email" placeholder="you@example.com" required><label for="role">Choose your role</label><select id="role" name="role" required><option value="" disabled selected>Select your crew role</option><option>Task specialist</option><option>Chief detective</option><option>Chaos coordinator</option><option>New crewmate</option></select><label class="check-label"><input type="checkbox" id="consent" required><span>I agree that the event organisers may contact me about this event.</span></label><button class="button button-primary submit-button" type="submit">Transmit registration <span>↗</span></button><p class="form-message" id="formMessage" role="status" aria-live="polite"></p><p class="form-small">Demo only · No data is transmitted or saved.</p></form></div></section>
+  </main>
+
+  <footer class="footer"><div class="wrap footer-inner"><a class="brand" href="#home"><span class="brand-mark">✦</span> SPARK <span class="brand-divider">/</span> <span class="brand-light">CREW EVENT</span></a><span>MADE FOR THE CREW, BY THE CREW.</span><a href="#home">BACK TO TOP ↑</a></div><div class="wrap footer-bottom"><span>Among Us is a trademark of its respective owner. This is an unofficial fan-style student project.</span><span>© <span id="year"></span> SPARK CREW EVENT</span></div></footer>
+
+<script>
+// Mobile navigation
+const menuToggle = document.querySelector('#menuToggle');
+const navLinks = document.querySelector('#navLinks');
+
+function closeMenu() {
+  navLinks.classList.remove('open');
+  menuToggle.setAttribute('aria-expanded', 'false');
+  menuToggle.setAttribute('aria-label', 'Open navigation');
+}
+
+menuToggle.addEventListener('click', () => {
+  const isOpen = navLinks.classList.toggle('open');
+  menuToggle.setAttribute('aria-expanded', String(isOpen));
+  menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+});
+
+navLinks.querySelectorAll('a').forEach((link) => {
+  link.addEventListener('click', closeMenu);
+});
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') closeMenu();
+});
+
+// Reveal sections as they enter the viewport. Keep content visible if unsupported.
+const revealItems = document.querySelectorAll('.reveal');
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver((entries, currentObserver) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        currentObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealItems.forEach((item) => observer.observe(item));
+} else {
+  revealItems.forEach((item) => item.classList.add('visible'));
+}
+
+// Keep the footer year current.
+document.querySelector('#year').textContent = new Date().getFullYear();
+
+// Demo-only form: validates input but deliberately does not transmit or save it.
+const form = document.querySelector('#registrationForm');
+const formMessage = document.querySelector('#formMessage');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (!form.reportValidity()) return;
+
+  const name = document.querySelector('#name').value.trim();
+  formMessage.textContent = `Transmission checked, ${name}! This demo does not send or save registrations. Connect an approved form service before collecting real sign-ups.`;
+  formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+});
+
+</script>
+</body>
+</html>
